@@ -50,10 +50,12 @@ def apply_coupons(cart, coupons)
           }
           cart.push(temp_hash)
           
-          if cart[inner_index][:count] - coupons[index][:num] == 0
-            cart.delete_at(inner_index)
-          else
-            cart[inner_index][:count] -= coupons[index][:num]
+#          if cart[inner_index][:count] - coupons[index][:num] == 0
+#            cart.delete_at(inner_index)
+#          else
+#            cart[inner_index][:count] -= coupons[index][:num]
+
+          cart[inner_index][:count] -= coupons[index][:num]
           end
         end
       end
