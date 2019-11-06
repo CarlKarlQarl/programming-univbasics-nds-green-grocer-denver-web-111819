@@ -50,7 +50,7 @@ def apply_coupons(cart, coupons)
             :count => coupons[index][:num]
           }
           cart.push(temp_hash)
-          
+          #subtract count or remove item from cart
         end
       end
     end
