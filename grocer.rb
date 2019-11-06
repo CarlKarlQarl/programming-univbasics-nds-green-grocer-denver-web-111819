@@ -45,7 +45,7 @@ def apply_coupons(cart, coupons)
           coupon_item = coupons[index][:item] + " W/COUPON"
           temp_hash = {
             :item => coupon_item,
-            :price = > (coupons[index][:cost] / coupons[index][:num]).round(3),
+            :price => (coupons[index][:cost] / coupons[index][:num]).round(3),
             :clearance => cart[inner_index][:clearance],
             :count => coupons[index][:num]
           }
