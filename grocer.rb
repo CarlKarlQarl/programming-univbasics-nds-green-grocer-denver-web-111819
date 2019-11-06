@@ -2,7 +2,9 @@ def find_item_by_name_in_collection(name, collection)
   # Implement me first!
   # Consult README for inputs and outputs
   
-  
+  collection.length.times do |index|
+    collection[index][:item]
+  end
   
 end
 
