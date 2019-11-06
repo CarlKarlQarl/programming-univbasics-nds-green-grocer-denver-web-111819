@@ -19,7 +19,11 @@ def consolidate_cart(cart)
   
   cart.length.times do |index|
       if cart[index] == find_item_by_name_in_collection(cart[index][:item], consolidated_cart)
-        
+        consolidated_cart.length.times do |inner_index|
+          if cart[index][:item] == consolidated_cart[inner_index][:item]
+            consolidated_cart[inner_index][:count] += 1
+          end
+        end
       else
         consolidated_cart.push(cart[index])
       end
