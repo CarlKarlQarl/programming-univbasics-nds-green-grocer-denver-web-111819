@@ -51,7 +51,11 @@ def apply_coupons(cart, coupons)
           }
           cart.push(temp_hash)
           
-          
+          if cart[inner_index][:count] - coupons[index][:num] == 0
+            cart
+          else
+            
+          end
           
         end
       end
