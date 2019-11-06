@@ -4,7 +4,7 @@ def find_item_by_name_in_collection(name, collection)
   
   collection.length.times do |index|
     if collection[index][:item] == name
-      return 
+      return collection[index]
     end
   end
   
