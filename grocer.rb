@@ -25,7 +25,9 @@ def consolidate_cart(cart)
           end
         end
       else
-        consolidated_cart.push(cart[index])
+        temp_hash = cart[index]
+        temp_hash[:count] = 1
+        consolidated_cart.push(temp_hash)
       end
   end
   return consolidated_cart
