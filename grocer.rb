@@ -49,6 +49,8 @@ def apply_coupons(cart, coupons)
             :clearance => cart[inner_index][:clearance],
             :count => coupons[index][:num]
           }
+          cart.push(temp_hash)
+          
         end
       end
     end
